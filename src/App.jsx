@@ -16,10 +16,10 @@ import EducationPage from './Pages/EducationPage'
 export default function App() {
   return (
    <>
-   <BrowserRouter>
+   <BrowserRouter basename='/Portfolio'>
    <Navbar/>
    <Routes>
-    <Route path='/'element={<HomePage/>}/>
+    <Route  exact path='/portfolio'element={<HomePage/>}/>
     <Route path='/about'element={<AboutPage/>}/>
     <Route path='/resume'element={<ResumePage/>}/>
     <Route path='/skills'element={<SkillPage/>}/>
